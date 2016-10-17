@@ -1,3 +1,6 @@
+/* ================================= 
+  General styles
+==================================== */
 body {
   background-color: #EBE8E4;
   color: #222;
@@ -7,7 +10,12 @@ body {
   margin: 8px 22px 8px 22px;
 }
 
+footer {
+  margin-top: 15px;
+}
 
+
+/* Main nav styles -------- */
 nav {
   background-color: #fff;
   border: 1px solid #dedede;
@@ -51,6 +59,48 @@ nav > ul > li:hover > a {
   color: rgb( 255, 255, 255 );
 }
 
-footer {
-  margin-top: 15px;
+/* Sub nav for car guide styles -------- */
+
+
+.car-nav li {
+  display: inline-block;
 }
+.car-nav li + li {
+  margin-left: .6em;
+}
+.car-nav a {
+  font-size: .85em;
+  color: #7d7d7d;
+  padding: .2em .8em;
+  border-radius: .25em;
+  background: #eaebeb;
+  transition: .2s;
+}
+.car-nav a:hover,
+.car-nav a.active {
+  color: #fff;
+  background: #39add1;
+}
+
+
+/* Flex box grid     ------------ */
+.cars {
+  display: flex;
+  justify-content: space-between;
+}
+
+.car {
+  width: 33%;
+}
+
+
+@media (max-width: 600px) {
+  .cars {
+    display: block;
+    .car {
+      width: 100%;
+      margin: 0 0 10px 0;
+    }
+  }
+}
+
