@@ -14,10 +14,14 @@
     box-shadow: 0 0 50px 10px #888888;
 }
 
+#header {
+    height: 98px;
+}
+
 #logo-container {
     width: 357px;
     height: 98px;
-    position: relative;
+    position: absolute;
 }
     #logo-background {
         width: inherit;
@@ -161,6 +165,8 @@
         padding: 15px;
         margin: 12px 0 0 12px;
         display: none;
+        font-size: 0.8em;
+        position: relative;
     }
         .bilguide-bil img {
             display: block;
@@ -169,6 +175,15 @@
         }
         .bilguide-bil .bilguide-navn {
             font-weight: bold;
+        }
+        .bilguide-bil span {
+            display: inline-block;
+            margin-bottom: 5px;
+        }
+        .bilguide-bil .leielink {
+            position: absolute;
+            bottom: 5px;
+            left: 45px;
         }
 
 #hovedvindu[data-klasse=A] .bilguide-bil[data-klasse=A] {
