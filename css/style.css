@@ -41,12 +41,19 @@
     background: -o-linear-gradient(#6e6d72 0%, #4e4e50 100%);
     background: linear-gradient(#6e6d72 0%, #4e4e50 100%);
     color: white;
+    position: relative;
 }
-    #hovedmeny-container > li {
-    }
     #hovedmeny-container a {
         color: white;
         text-decoration: none;
+    }
+    #hovedmeny-knapp {
+        width: 30px;
+        top: 10px;
+        margin: auto;
+        top: 10px;
+        position: relative;
+        display: none;
     }
 
     #hovedmeny {
@@ -91,7 +98,6 @@
         }
             #hovedmeny ul li {
                 border-bottom: 1px solid lightgrey;
-                padding-left: 10px;
                 height: 40px;
                 line-height: 40px;
                 position: relative;
@@ -110,9 +116,6 @@
             display: block;
         }
 
-#hovedvindu {
-    padding: 20px 0;
-}
     #hovedvindu .overskrift {
         margin: auto;
         text-align: center;
@@ -204,22 +207,145 @@
 }
 
 #forside-wrapper {
+    display: table;
+    width: 100%;
     position: relative;
 }
 
 #bestilling-container {
-    max-width: 1248px;
+    display: table-cell;
+    width: auto;
     height: 100%;
-    background: red;
+    position: relative;
+    overflow: hidden;
 }
+    #bestilling-bakgrunn {
+        position: absolute;
+        width: 100%;
+    }
+    #bestilling-reklametekst {
+        position: absolute;
+        top: 25px;
+        right: 25px;
+    }
+
+    #bestillingsvindu {
+        position: relative;
+        margin: 20px;
+        background: rgba(255, 255, 255, 0.7);
+        width: 300px;
+        height: 400px;
+        border: 1px solid grey;
+    }
+        #bestillingsvindu a {
+            display: block;
+            float: left;
+            width: 50%;
+            text-align: center;
+            color: black;
+            text-decoration: none;
+            padding: 5px 0;
+            background: #fffa9f;
+        }
+            #bestillingsvindu a.active {
+                background: yellow;
+            }
+
+        #bestillingsfane,
+        #avbestillingsfane {
+            display: none;
+        }
+            #bestillingsfane.active,
+            #avbestillingsfane.active {
+                display: table;
+            }
+            .bestilling-rekke {
+                display: table-row;
+            }
+            .bestilling-tall {
+                display: table-cell;
+                width: 50px;
+                height: 50px;
+            }
+                .bestilling-tall span {
+                    display: block;
+                    margin: auto;
+                    position: relative;
+                    top: 12px;
+                    width: 40px;
+                    height: 40px;
+                    line-height: 40px;
+                    text-align: center;
+                    border: 1px solid grey;
+                    border-radius: 25px;
+                }
+            .bestilling-info {
+                padding-bottom: 10px;
+                font-size: 0.8em;
+            }
+                .bestilling-info input,
+                .bestilling-info select {
+                    width: 200px;
+                    margin-top: 5px;
+                }
+
+            .bestilling-knapp {
+                padding: 10px 0;
+                background: blue;
+                color: white;
+                font-weight: bold;
+                border: none;
+                border-radius: 3px;
+            }
 
 #reklame-container {
+    display: table-cell;
     width: 248px;
     height: 100%;
-    position: absolute;
-    top: 0;
-    right: 0;
-    background: blue;
+    padding: 0;
+    vertical-align: top;
+}
+    .reklame {
+        width: 96%;
+        font-size: 0.8em;
+        border: 1px solid lightgrey;
+        margin: 2px;
+    }
+        .reklame img {
+            width: 100%;
+        }
+        .reklame div {
+            width: 90%;
+            padding: 5%;
+            background: linear-gradient(#FFF, #DDD);
+        }
+
+@media (max-width: 1080px) {
+    #hovedmeny {
+        font-size: 0.75em;
+    }
+        #hovedmeny > li > span, #hovedmeny > li > a {
+            margin: 0 5px;
+        }
+}
+
+@media (max-width: 700px) {
+    #hovedmeny {
+        float: none;
+        top: 50px;
+    }
+        #hovedmeny-knapp {
+            display: block;
+        }
+        #hovedmeny > li {
+            float: none;
+            left: 0;
+            width: 100%;
+            display: none;
+        }
+            #hovedmeny.active > li {
+                display: block;
+            }
 }
 
 @media (min-width: 768px) and (max-width: 999px) {
@@ -232,6 +358,9 @@
         #bilmeny li {
             width: 138px;
         }
+    #reklame-container {
+        display: none;
+    }
 }
 
 @media (min-width: 420px) and (max-width: 767px) {
@@ -241,6 +370,18 @@
     #bilmeny {
         width: 404px;
     }
+    #reklame-container {
+        display: none;
+    }
+}
+
+@media (max-width: 660px) {
+    #bestilling-bakgrunn {
+        display: none;
+    }
+    #bestilling-reklametekst {
+        display: none;
+    }
 }
 
 @media (max-width: 419px) {
@@ -249,5 +390,8 @@
     }
     #bilmeny {
         width: 208px;
+    }
+    #reklame-container {
+        display: none;
     }
 }

@@ -51,24 +51,102 @@
                         </ul>
                     </li>
                 </ul>
+                <img src="images/meny.png" id="hovedmeny-knapp" />
             </div>
 
             <div id="hovedvindu">
                 <div id="forside-wrapper">
                     <div id="bestilling-container">
-                        <div id="bestillingsbindu">
-                            <a id="bestillingsfane-link" href="">Bestill en bil</a>
+                        <img id="bestilling-bakgrunn" src="images/popemobile.jpg" alt="Bilde av pavens bil" />
+                        <div id="bestilling-reklametekst">
+                            <h2>Kjøp en popemobile!</h2>
+                            <span>Bilens forrige eier kom ut for en ulykke.<br />Les mer i morgendagens aviser.</span>
+                        </div>
+                        <div id="bestillingsvindu">
+                            <a id="bestillingsfane-link" class="active" href="">Bestill en bil</a>
                             <a id="avbestillingsfane-link" href="">Avbestill en bil</a>
-                            <div id="bestillingsfane">
-                                
+                            <div id="bestillingsfane" class="active">
+                                <div class="bestilling-rekke">
+                                    <div class="bestilling-tall"><span>1</span></div>
+                                    <div class="bestilling-info">
+                                        <label for="bestilling-sted"><strong>Sted</strong> (by eller land)</label><br />
+                                        <input type="text" id="bestilling-sted" name="bestilling-sted" />
+                                    </div>
+                                </div>
+                                <div class="bestilling-rekke">
+                                    <div class="bestilling-tall"><span>2</span></div>
+                                    <div class="bestilling-info">
+                                        <label for="bestilling-hentetidspunkt"><strong>Hentes</strong></label><br />
+                                        <input type="text" id="bestilling-hentetidspunkt" name="bestilling-hentetidspunkt" /><br />
+                                        <label for="bestilling-leveringstidspunkt"><strong>Leveres</strong></label><br />
+                                        <input type="text" id="bestilling-leveringstidspunkt" name="bestilling-leveringstidspunkt" />
+                                    </div>
+                                </div>
+                                <div class="bestilling-rekke">
+                                    <div class="bestilling-tall"><span>3</span></div>
+                                    <div class="bestilling-info">
+                                        <label for="bestilling-alder"><strong>Din alder</strong></label><br />
+                                        <input type="number" id="bestilling-alder" name="bestilling-alder" />
+                                    </div>
+                                </div>
+                                <div class="bestilling-rekke">
+                                    <div class="bestilling-tall"><span>4</span></div>
+                                    <div class="bestilling-info">
+                                        <label for="bestilling-biltype"><strong>Biltype</strong></label><br />
+                                        <select name="bestilling-biltype" id="bestilling-biltype">
+                                            <option value="A">A</option>
+                                            <option value="B">B</option>
+                                            <option value="C">C</option>
+                                            <option value="D">D</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="bestilling-rekke">
+                                    <div class="bestilling-tall"></div>
+                                    <div class="bestilling-info">
+                                        <input class="bestilling-knapp" type="submit" value="Bestill bil" />
+                                    </div>
+                                </div>
                             </div>
                             <div id="avbestillingsfane">
-
+                                <div class="bestilling-rekke">
+                                    <div class="bestilling-tall"><span>1</span></div>
+                                    <div class="bestilling-info">
+                                        <label for="avbestilling-nummer"><strong>Bestillingsnummer</strong></label><br />
+                                        <input type="number" id="avbestilling-nummer" name="avbestilling-nummer" />
+                                    </div>
+                                </div>
+                                <div class="bestilling-rekke">
+                                    <div class="bestilling-tall"></div>
+                                    <div class="bestilling-info">
+                                        <input class="bestilling-knapp" type="submit" value="Avbestill" />
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                     <div id="reklame-container">
-                        
+                        <div class="reklame">
+                            <img src="images/pixarcar.jpg" alt="En bil fra en Pixar-film" />
+                            <div>
+                                <strong>Kjendisbil</strong><br />
+                                <span>Merk: Frontruten må fikses.</span>
+                            </div>
+                        </div>
+                        <div class="reklame">
+                            <img src="images/pellepoliti.jpg" alt="Pelle Politibil">
+                            <div>
+                                <strong>Pelle Politibil</strong><br />
+                                <span>Selvkjørende bil med politimodul.</span>
+                            </div>
+                        </div>
+                        <div class="reklame">
+                            <img src="images/noddy.gif" alt="Lekebilen til Noddy">
+                            <div>
+                                <strong>Lekebil</strong><br />
+                                <span>For de med dårlig råd og lavt behov.</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
