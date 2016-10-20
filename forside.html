@@ -23,31 +23,31 @@
                     <li>
                         <span>Priser og reservasjoner</span>
                         <ul>
-                            <li><a href="">Få et tilbud - bestill en bil</a></li>
-                            <li><a href="">Vis/Endre/Avbestill reservasjon</a></li>
-                            <li><a href="">Finn kvittering</a></li>
-                            <li><a href="">Leiebetingelser</a></li>
+                            <li><a href="nyi.html">Få et tilbud - bestill en bil</a></li>
+                            <li><a href="nyi.html">Vis/Endre/Avbestill reservasjon</a></li>
+                            <li><a href="nyi.html">Finn kvittering</a></li>
+                            <li><a href="nyi.html">Leiebetingelser</a></li>
                         </ul>
                     </li>
-                    <li><a href="">Spesialtilbud</a></li>
-                    <li><a href="">Lokasjoner</a></li>
+                    <li><a href="nyi.html">Spesialtilbud</a></li>
+                    <li><a href="nyi.html">Lokasjoner</a></li>
                     <li><a href="bilguide.html">Bilguide</a></li>
-                    <li><a href="">Varebil</a></li>
+                    <li><a href="nyi.html">Varebil</a></li>
                     <li>
                         <span>Produkter og tjenester</span>
                         <ul>
-                            <li><a href="">Alle produkter og tjenester</a></li>
-                            <li><a href="">Bedriftsavtale</a></li>
-                            <li><a href="">Bildeling</a></li>
-                            <li><a href="">Månedsleie</a></li>
-                            <li><a href="">Varebil</a></li>
+                            <li><a href="nyi.html">Alle produkter og tjenester</a></li>
+                            <li><a href="nyi.html">Bedriftsavtale</a></li>
+                            <li><a href="nyi.html">Bildeling</a></li>
+                            <li><a href="nyi.html">Månedsleie</a></li>
+                            <li><a href="nyi.html">Varebil</a></li>
                         </ul>
                     </li>
                     <li>
                         <span>Hertz Lojalitetsprogram</span>
                         <ul>
-                            <li><a href="">Oversikt/Bli medlem</a></li>
-                            <li><a href="">Hertz Gold Plus Rewards</a></li>
+                            <li><a href="nyi.html">Oversikt/Bli medlem</a></li>
+                            <li><a href="nyi.html">Hertz Gold Plus Rewards</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -63,66 +63,68 @@
                             <span>Bilens forrige eier kom ut for en ulykke.<br />Les mer i morgendagens aviser.</span>
                         </div>
                         <div id="bestillingsvindu">
-                            <a id="bestillingsfane-link" class="active" href="">Bestill en bil</a>
-                            <a id="avbestillingsfane-link" href="">Avbestill en bil</a>
-                            <div id="bestillingsfane" class="active">
-                                <div class="bestilling-rekke">
-                                    <div class="bestilling-tall"><span>1</span></div>
-                                    <div class="bestilling-info">
-                                        <label for="bestilling-sted"><strong>Sted</strong> (by eller land)</label><br />
-                                        <input type="text" id="bestilling-sted" name="bestilling-sted" />
+                            <form action="bekreft.html" method="get">
+                                <a id="bestillingsfane-link" class="active" href="">Bestill en bil</a>
+                                <a id="avbestillingsfane-link" href="">Avbestill en bil</a>
+                                <div id="bestillingsfane" class="active">
+                                    <div class="bestilling-rekke">
+                                        <div class="bestilling-tall"><span>1</span></div>
+                                        <div class="bestilling-info">
+                                            <label for="bestilling-sted"><strong>Sted</strong> (by eller land)</label><br />
+                                            <input type="text" id="bestilling-sted" name="bestilling-sted" />
+                                        </div>
+                                    </div>
+                                    <div class="bestilling-rekke">
+                                        <div class="bestilling-tall"><span>2</span></div>
+                                        <div class="bestilling-info">
+                                            <label for="bestilling-hentetidspunkt"><strong>Hentes</strong></label><br />
+                                            <input type="text" id="bestilling-hentetidspunkt" name="bestilling-hentetidspunkt" /><br />
+                                            <label for="bestilling-leveringstidspunkt"><strong>Leveres</strong></label><br />
+                                            <input type="text" id="bestilling-leveringstidspunkt" name="bestilling-leveringstidspunkt" />
+                                        </div>
+                                    </div>
+                                    <div class="bestilling-rekke">
+                                        <div class="bestilling-tall"><span>3</span></div>
+                                        <div class="bestilling-info">
+                                            <label for="bestilling-alder"><strong>Din alder</strong></label><br />
+                                            <input type="number" id="bestilling-alder" name="bestilling-alder" />
+                                        </div>
+                                    </div>
+                                    <div class="bestilling-rekke">
+                                        <div class="bestilling-tall"><span>4</span></div>
+                                        <div class="bestilling-info">
+                                            <label for="bestilling-biltype"><strong>Biltype</strong></label><br />
+                                            <select name="bestilling-biltype" id="bestilling-biltype">
+                                                <option value="A">A</option>
+                                                <option value="B">B</option>
+                                                <option value="C">C</option>
+                                                <option value="D">D</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="bestilling-rekke">
+                                        <div class="bestilling-tall"></div>
+                                        <div class="bestilling-info">
+                                            <input class="bestilling-knapp" type="submit" value="Bestill bil" />
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="bestilling-rekke">
-                                    <div class="bestilling-tall"><span>2</span></div>
-                                    <div class="bestilling-info">
-                                        <label for="bestilling-hentetidspunkt"><strong>Hentes</strong></label><br />
-                                        <input type="text" id="bestilling-hentetidspunkt" name="bestilling-hentetidspunkt" /><br />
-                                        <label for="bestilling-leveringstidspunkt"><strong>Leveres</strong></label><br />
-                                        <input type="text" id="bestilling-leveringstidspunkt" name="bestilling-leveringstidspunkt" />
+                                <div id="avbestillingsfane">
+                                    <div class="bestilling-rekke">
+                                        <div class="bestilling-tall"><span>1</span></div>
+                                        <div class="bestilling-info">
+                                            <label for="avbestilling-nummer"><strong>Bestillingsnummer</strong></label><br />
+                                            <input type="number" id="avbestilling-nummer" name="avbestilling-nummer" />
+                                        </div>
+                                    </div>
+                                    <div class="bestilling-rekke">
+                                        <div class="bestilling-tall"></div>
+                                        <div class="bestilling-info">
+                                            <input class="bestilling-knapp" type="submit" value="Avbestill" />
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="bestilling-rekke">
-                                    <div class="bestilling-tall"><span>3</span></div>
-                                    <div class="bestilling-info">
-                                        <label for="bestilling-alder"><strong>Din alder</strong></label><br />
-                                        <input type="number" id="bestilling-alder" name="bestilling-alder" />
-                                    </div>
-                                </div>
-                                <div class="bestilling-rekke">
-                                    <div class="bestilling-tall"><span>4</span></div>
-                                    <div class="bestilling-info">
-                                        <label for="bestilling-biltype"><strong>Biltype</strong></label><br />
-                                        <select name="bestilling-biltype" id="bestilling-biltype">
-                                            <option value="A">A</option>
-                                            <option value="B">B</option>
-                                            <option value="C">C</option>
-                                            <option value="D">D</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="bestilling-rekke">
-                                    <div class="bestilling-tall"></div>
-                                    <div class="bestilling-info">
-                                        <input class="bestilling-knapp" type="submit" value="Bestill bil" />
-                                    </div>
-                                </div>
-                            </div>
-                            <div id="avbestillingsfane">
-                                <div class="bestilling-rekke">
-                                    <div class="bestilling-tall"><span>1</span></div>
-                                    <div class="bestilling-info">
-                                        <label for="avbestilling-nummer"><strong>Bestillingsnummer</strong></label><br />
-                                        <input type="number" id="avbestilling-nummer" name="avbestilling-nummer" />
-                                    </div>
-                                </div>
-                                <div class="bestilling-rekke">
-                                    <div class="bestilling-tall"></div>
-                                    <div class="bestilling-info">
-                                        <input class="bestilling-knapp" type="submit" value="Avbestill" />
-                                    </div>
-                                </div>
-                            </div>
+                            </form>
                         </div>
                     </div>
                     <div id="reklame-container">

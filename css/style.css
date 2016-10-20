@@ -296,6 +296,7 @@
                 font-weight: bold;
                 border: none;
                 border-radius: 3px;
+                cursor: pointer;
             }
 
 #reklame-container {
@@ -319,6 +320,19 @@
             padding: 5%;
             background: linear-gradient(#FFF, #DDD);
         }
+
+#bekreft-table {
+    margin: auto;
+    border-collapse: collapse;
+}
+    #bekreft-table th, #bekreft-table td {
+        padding: 10px 20px;
+        border: 1px solid black;
+    }
+
+    #bekreft-table .bestilling-knapp {
+        width: 100%;
+    }
 
 @media (max-width: 1080px) {
     #hovedmeny {
